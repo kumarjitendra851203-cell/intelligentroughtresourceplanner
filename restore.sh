@@ -1,0 +1,3 @@
+#!/bin/bash
+# Rebuild the project folder from the numbered files: run inside the folder that holds 01_*, 02_* ...
+mkdir -p irrp && for f in [0-9][0-9]_*; do p="irrp/$(echo "${f#*_}" | sed 's#__init__#@INIT@#; s#__#/#g; s#@INIT@#__init__#')"; mkdir -p "$(dirname "$p")"; cp "$f" "$p"; done && echo "Project rebuilt in ./irrp"

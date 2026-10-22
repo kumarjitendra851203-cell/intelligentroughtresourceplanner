@@ -1,0 +1,13 @@
+:root{--bg:#f4f7fa;--cd:#fff;--tx:#0f1b2d;--mu:#5b6b7f;--bd:#dde3ea;--pr:#1d4ed8;--tl:#0d9488;--nv:#0b1f3a}
+[data-theme=dark]{--bg:#0b1220;--cd:#121c2e;--tx:#e6edf6;--mu:#93a3b8;--bd:#24324a;--pr:#60a5fa;--tl:#2dd4bf;--nv:#060d19}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.5 system-ui,sans-serif}
+.app{display:flex;min-height:100vh}nav{width:200px;background:var(--nv);padding:12px 8px;flex-shrink:0}nav.sm{width:56px}
+nav button{display:block;width:100%;text-align:left;background:none;border:0;color:#cfe0f5;padding:9px 10px;border-radius:6px;cursor:pointer;font:inherit}nav button:hover,nav button.on{background:#17355e;color:#fff}
+main{flex:1;padding:18px;min-width:0}h2{margin:0 0 12px}h3{margin:0 0 8px;font-size:14px}.cd{background:var(--cd);border:1px solid var(--bd);border-radius:8px;padding:14px;margin-bottom:14px}
+.g2{display:grid;gap:12px;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr)}.f{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}.row{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:4px 0}
+label{display:block;font-size:12px;color:var(--mu)}input,select{width:100%;padding:7px 8px;border:1px solid var(--bd);border-radius:6px;background:var(--cd);color:var(--tx);font:inherit}
+.b{background:var(--pr);color:#fff;border:0;border-radius:6px;padding:7px 12px;cursor:pointer;font:inherit;width:auto}.b.s{background:none;color:var(--pr);border:1px solid var(--bd)}.b.d{background:#b91c1c}.b:disabled{opacity:.5}
+table{width:100%;border-collapse:collapse}th,td{padding:7px 6px;border-bottom:1px solid var(--bd);text-align:left;white-space:nowrap}.w{overflow-x:auto}.mu{color:var(--mu)}.er{color:#dc2626}.ok{color:var(--tl)}
+.map{height:380px;border-radius:8px;margin-bottom:12px}.k{font-size:22px;font-weight:600}.kp{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-bottom:14px}.sel{outline:2px solid var(--pr)}
+.pin{background:var(--pr);color:#fff;border-radius:50%;text-align:center;font-weight:600;line-height:24px;width:24px;height:24px}
+@media(max-width:800px){.app{flex-direction:column}nav,nav.sm{width:100%;display:flex;overflow-x:auto}nav button{width:auto;white-space:nowrap}.g2{grid-template-columns:1fr}}
